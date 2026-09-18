@@ -68,3 +68,5 @@ xlim([-0.25 0.25])
 ylim([-0.25 0.25])
 axis equal
 axis square
+
+1/min(svd(Y))
