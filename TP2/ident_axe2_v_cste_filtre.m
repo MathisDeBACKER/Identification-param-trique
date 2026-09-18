@@ -15,7 +15,8 @@ N2=4.5; %% inverse du rapport de réduction de l'axe 2.
 kc1=0.0525;
 N1=20.25;
 
-N = 29344;
+n= size(q2);
+N=n(1);
 Y = zeros(N, 4);
 u = zeros(N, 1);
 
@@ -39,8 +40,8 @@ set(h,'LineWidth',0.5);
 hold on; %% permet de conserver le graphique et d'en ajouter d'autres sur la même fig.
 h=plot3(q2,qpfil2,Y*p,'.');
 set(h,'LineWidth',1.5);
-title('Résultats de l''identification sans filtrage');
-legend('\Gamma_2 non filtré', 'modèle');
+title('Résultats de l''identification avec filtrage');
+legend('\Gamma_2 filtré', 'modèle');
 grid on;
 xlabel('$q_2$','Interpreter','latex')
 ylabel('$\dot{q}_2$','Interpreter','latex')

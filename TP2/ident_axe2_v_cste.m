@@ -15,7 +15,8 @@ N2=4.5; %% inverse du rapport de réduction de l'axe 2.
 kc1=0.0525;
 N1=20.25;
 
-N = 29344;
+n= size(q2);
+N=n(1);
 Y = zeros(N, 4);
 u = zeros(N, 1);
 
