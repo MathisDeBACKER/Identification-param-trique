@@ -9,15 +9,15 @@ N2=4.5;
 
 %% Paramètres identifiés à vitesse constante
 %% Pour l'axe 1 : 
-alpha1=0.0829;
-a1=0.0582;
-b1=0.00193;
-c1=-0.0123;
+alpha2=0.0829;
+a2=0.0582;
+b2=0.00193;
+c2=-0.0123;
 %% Pour l'axe 2 :
-alpha2=0.872;
-a2=0.176;
-b2=0.00603;
-c2=-0.0302;
+alpha1=0.872;
+a1=0.176;
+b1=0.00603;
+c1=-0.0302;
 
 %pour construire la matrice Z, on doit remplir deux lignes de trois colonnes pour chaque
 %échantillon, ce qui peut se faire par l'instruction :
@@ -102,3 +102,13 @@ title('Résultats axe 2 ; identification à partir de données filtrées');
 disp("svd de Z");
 1/min(svd(Z))
 
+
+
+%figure(3) %% pour l'axe 1
+%clf
+%hold on
+%grid on
+%h=plot(t,N1*kc1*i1-ctotal(1:2:length(ctotal)),'r--');
+%set(h,'LineWidth',1.5);
+%legend('\residus');
+%title('Résultats axe 1 ; identification à partir de données filtrées');
