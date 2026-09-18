@@ -2,11 +2,12 @@
 %% DE L'AXE 2 POUR DES MOUVEMENTS A VITESSE CONSTANTE
 %% G. MOREL - 29-12-05.
 %% M. Khoramshahi 02-02-2023
+%% M. BONDIL 18-09-2026
 
 close all
 clc
 clear all; %% efface toutes les variables existantes
-load releve_vit_cste_axe2; %% charge les relevés expérimentaux
+load releve_vit_cste_axe1; %% charge les relevés expérimentaux
 
 %% Paramètres connus a priori:
 kc2=0.0525; %% constante de couple de l'axe 2.
@@ -15,15 +16,18 @@ N2=4.5; %% inverse du rapport de réduction de l'axe 2.
 kc1=0.0525;
 N1=20.25;
 
-
+n = size(q1);
+N = n(1);
+Y = zeros(N, 4);
+u = zeros(N, 1);
 
 %% Construction de la matrice Y.
-for k=1:29344
-    Y(q2,qp2,k) = [cos(q2(k)), sgn(qp2(k)), qp2(k), 1];
-    u(i2,k) =  [u(i2,k); N2*kc2*i2(k);
+for k=1:N
+    Y(k,:) = [cos(q1(k)), sign(qp1(k)), qp1(k), 1];
+    u(k) =   N1*kc1*i1(k);
 end
 %% Calcul des paramètres
-p=??;
+p= Y\u;
 
 %% Affichage des résultats.
 format long
@@ -32,16 +36,16 @@ p'
 
 figure(1)
 clf; %% clear figure
-h=plot3(q2,qp2,kc2*N2*i2,'x');
+h=plot3(q1,qp1,kc1*N1*i1,'x');
 set(h,'LineWidth',0.5);
 hold on; %% permet de conserver le graphique et d'en ajouter d'autres sur la même fig.
-h=plot3(q2,qp2,Y*p,'.');
+h=plot3(q1,qp1,Y*p,'.');
 set(h,'LineWidth',1.5);
 title('Résultats de l''identification sans filtrage');
-legend('\Gamma_2 non filtré', 'modèle');
+legend('\Gamma_1 non filtré', 'modèle');
 grid on;
-xlabel('$q_2$','Interpreter','latex')
-ylabel('$\dot{q}_2$','Interpreter','latex')
+xlabel('$q_1$','Interpreter','latex')
+ylabel('$\dot{q}_1$','Interpreter','latex')
 zlabel('$\tau$','Interpreter','latex')
 
 

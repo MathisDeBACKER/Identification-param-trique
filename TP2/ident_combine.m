@@ -9,15 +9,20 @@ N2=4.5;
 
 %% Paramètres identifiés à vitesse constante
 %% Pour l'axe 1 : 
-alpha1=??;
-a1=??;
-b1=??;
+alpha1=0.0829;
+a1=0.0582;
+b1=0.00193;
 c1=??;
 %% Pour l'axe 2 :
 alpha2=??;
 a2=??;
 b2=??;
 c2=??;
+
+pour construire la matrice Z, on doit remplir deux lignes de trois colonnes pour chaque
+échantillon, ce qui peut se faire par l'instruction :
+Z(2*i-1:2*i,1:3)=[a b c
+d e f];
 
 %% identification à partir des données filtrées
 for(i=1:length(t)) 
