@@ -104,11 +104,11 @@ disp("svd de Z");
 
 
 
-%figure(3) %% pour l'axe 1
-%clf
-%hold on
-%grid on
-%h=plot(t,N1*kc1*i1-ctotal(1:2:length(ctotal)),'r--');
-%set(h,'LineWidth',1.5);
-%legend('\residus');
-%title('Résultats axe 1 ; identification à partir de données filtrées');
+figure(3) %% pour l'axe 1
+clf
+hold on
+grid on
+h=plot(t,N1*kc1*i1-ctotal(1:2:length(ctotal)),'r--');
+set(h,'LineWidth',1.5);
+legend('\residus');
+title('Résultats axe 1 ; identification à partir de données filtrées');
