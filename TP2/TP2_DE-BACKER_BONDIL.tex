@@ -40,21 +40,21 @@
 %         One-sentence intro
 % ============================
 % Keep this to 2–3 lines max; no abstract section to stay minimal.
-\noindent\textbf{Context.}Dans ce TP nous avons tester des situations où l'on peut découplé les équation et annuler certian inconnues des équations nous permettant d'isolé et d'identifier un plus petit groupe d'inconnues, pour ensuites identidier les plus complexes. 
+\noindent\textbf{Context}Dans ce TP nous avons tester des situations où l'on peut découplé les équations et annuler certaines inconnues des équations nous permettant d'isoler et d'identifier un plus petit groupe d'inconnues, pour ensuite identifier les plus complexes. 
 
 
 % ============================
 %           Sections
 % ============================
 \section*{Problem Statement}
-Les inconnues des equations du sytème cromprennent les termes d'inertie, centrifuges, de gravité et de frottements, en plus de ça les deux equations du systeme sont couplé dans un sens car le mouvement du premier moteur engendre une rotation du deuxieme.\\
-On cherche ensuite à traiter chaque moteur séparement. On établie des situations où les deux moteurs sont découplé, ce qui nous donne : les terme d'inertie et centrifuge son nul, les termes de gravité sont decouplé. Pour ainsi pouvoir identifié les parametres gravitaires et de frottements restant.\\
-Grace aux parametres trouvé on peut maintenant isloer et determiner les parametres manquant d'inertie et ceux centrifuges.
+Les inconnues des équations du système comprennent les termes d’inertie, centrifuges, de gravité et de frottements. De plus, les deux équations du système sont couplées dans un sens, car le mouvement du premier moteur engendre une rotation du deuxième.
+On cherche ensuite à traiter chaque moteur séparément. On établit des situations où les deux moteurs sont découplés, ce qui nous donne : les termes d’inertie et centrifuges sont nuls, et les termes de gravité sont découplés, pour ainsi pouvoir identifier les paramètres gravitaires et de frottements restants.
+Grâce aux paramètres trouvés, on peut maintenant isoler et déterminer les paramètres manquants d’inertie et ceux centrifuges.
 
 \section*{Method and Implementation}
-On a fait attention a ce que le nombre "n" de donné (q1, q2, qp1, qp2 ...) soit bien dimensionné en fonctioons des parametres que l'on étudie en utilisant : n = size(q1).
-Comme pour le TP1 on a fait deux matrice (A et u) qui s'ajuste en fonction du nombre de données.
-En utilisant la formule du cours on peut verifie que les parametres trouvés on la meme echelle d'erreur.
+On a fait attention à ce que le nombre "n" de données (q1, q2, qp1, qp2 ...) soit bien dimensionné en fonctions des paramètres que l'on étudie en utilisant : n = size(q1).
+Comme pour le TP1 on a fait deux matrices (A et u) qui s'ajustent en fonction du nombre de données.
+En utilisant la formule du cours on peut verifie que les parametres trouvés on la même échelle d'erreur.
 
 % ============================
 %     Main Results Figure
@@ -68,11 +68,11 @@ En utilisant la formule du cours on peut verifie que les parametres trouvés on 
 \end{figure}
 
 \section*{Results}
-On observe que les parametre filtré nous donne une valeur assez proches ou la meme suivant les parametres de ce non filtrés mais on ne sait pas les plus veridicte, même si on va supposé que ceux filtré sont plus exactes.\\
-On observe sur le graphique \ref{fig:summary} que la difference entre le signal de sortie trouvée et réel ressemble a une sinuzoide très bruité qui correspond à l'élément que l'on n'a pas pris en compte lors de notre etude : la courroie.
+On observe que les paramètres filtrés nous donnent des valeurs assez proches (ou identiques) par rapport à ceux non filtrés, mais on ne sait pas les plus véridicte, même si l'on suppose que ceux filtrés sont plus exacts.\\
+On observe sur le graphique \ref{fig:summary} que la différence entre le signal de sortie trouvé et le signal réel ressemble a une sinusoïde très bruitée qui correspond à l'élément que l'on n'a pas pris en compte lors de notre étude : la courroie.
 
 \section*{Conclusion}
-On a aprris qu'il fallait trouvé découplé notre systeme pour pouvoir identifier les parametre de celui-ci, et ne pas hesiter a essayer d'annuler le plus de terme et au fur et a mesure les rajouter un par un si possible. Il ne faut pas oublié ce qu'on ne modelise pas (comme la courroie) par simplicité a toujours une réercution sur le résultat final.
+On a aprris qu'il fallait découpler notre système pour pouvoir en identifier les paramètres, et ne pas hésiter à annuler le plus de termes possible avant de les rajouter au fur et à mesure. Il ne faut pas oublier que ce que l'on ne modelise pas (comme la courroie) par simplicité a toujours une répercussion sur le résultat final.
 
 % Balance last page columns and end.
 \balance
