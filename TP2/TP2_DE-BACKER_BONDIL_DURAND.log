@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.29)  21 SEP 2026 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.29)  25 SEP 2026 13:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**TP2_DE-BACKER_BONDIL.tex
-(./TP2_DE-BACKER_BONDIL.tex
+**TP2_DE-BACKER_BONDIL_DURAND.tex
+(./TP2_DE-BACKER_BONDIL_DURAND.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-05-15>
 (c:/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -178,8 +178,8 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count292
 )
-(./TP2_DE-BACKER_BONDIL.aux)
-\openout1 = `TP2_DE-BACKER_BONDIL.aux'.
+No file TP2_DE-BACKER_BONDIL_DURAND.aux.
+\openout1 = `TP2_DE-BACKER_BONDIL_DURAND.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
@@ -212,7 +212,6 @@ Package microtype Info: Patching command `\showhyphens'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-
 (c:/texlive/2026/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
@@ -308,14 +307,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 <fig_parameters.png, id=1, 551.1792pt x 357.4956pt>
 File: fig_parameters.png Graphic file (type png)
 <use fig_parameters.png>
-Package pdftex.def Info: fig_parameters.png  used on input line 65.
+Package pdftex.def Info: fig_parameters.png  used on input line 66.
 (pdftex.def)             Requested size: 230.46576pt x 149.48161pt.
 
 
-LaTeX Warning: Reference `fig:summary' on page 1 undefined on input line 72.
+LaTeX Warning: Reference `fig:summary' on page 1 undefined on input line 73.
 
 
-Underfull \vbox (badness 1314) has occurred while \output is active []
+Underfull \vbox (badness 3260) has occurred while \output is active []
 
 
 
@@ -327,7 +326,7 @@ Package balance Warning: You have called \balance in second column
 
 
  <./fig_parameters.png (PNG copy)>]
-(./TP2_DE-BACKER_BONDIL.aux)
+(./TP2_DE-BACKER_BONDIL_DURAND.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-05-15>
@@ -341,19 +340,19 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5954 strings out of 467340
- 101038 string characters out of 5419566
- 548629 words of memory out of 5000000
- 34937 multiletter control sequences out of 15000+600000
- 670019 words of font info for 100 fonts, out of 8000000 for 9000
+ 5951 strings out of 467340
+ 101006 string characters out of 5419566
+ 548676 words of memory out of 5000000
+ 34936 multiletter control sequences out of 15000+600000
+ 670008 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,65p,1017b,432s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,65p,1024b,432s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2026
 /texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2026/texmf-dist/fonts/
 type1/public/lm/lmbx9.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr
 10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/
 2026/texmf-dist/fonts/type1/public/lm/lmr9.pfb>
-Output written on TP2_DE-BACKER_BONDIL.pdf (1 page, 214862 bytes).
+Output written on TP2_DE-BACKER_BONDIL_DURAND.pdf (1 page, 215520 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  23 compressed objects within 1 object stream
